@@ -10,7 +10,7 @@ date: 2025-10-26
 
 In his seminal book *Design as Art*, Bruno Munari famously defined a designer as *a planner with an aesthetic sense*.[^1]
 
-The word *[[design]]* does not have a direct equivalent in Italian. *Disegnare* is to draw. Before adopting the now ubiquitous English term, Italian designers used the verb *'progettare'* which means to design, to imagine and plan something into existence.
+The word [[design]] does not have a direct equivalent in Italian. *Disegnare* is to draw. Before adopting the now ubiquitous English term, Italian designers used the verb *'progettare'* which means to design, to imagine and plan something into existence.
 
 ---
 #### References

@@ -8,7 +8,7 @@ category:
 date: 2024-08-23
 ---
 
-When people ask me the standard question: what do you do? It's hard to give a straight answer. I do strategy, research, design, writing... where do I start? I studied and practiced graphic design for a time in my life, among other things. Design is integral to what I do, but [[I am a|I am not a designer]]. When I talk about design, mostly I don't talk about a craft or a style.
+When people ask me the standard question: what do you do? It's hard to give a straight answer. I do strategy, research, design, writing... where do I start? I studied and practiced graphic design for a time in my life, among other things. Design is integral to what I do, but [[I am a]] not a designer. When I talk about design, mostly I don't talk about a craft or a style.
 
 ### [[A Designer is a planner with an aesthetic sense]].
 

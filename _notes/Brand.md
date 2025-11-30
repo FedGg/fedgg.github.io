@@ -34,5 +34,5 @@ Those internal to the organisation behind the brand, and the people whom the bra
 
 Creating a [[brand strategy framework]] is a process of analysis, interpretation and [[synthesis]]. It is about apprehending a [[complex]] set of factors and distil it down to something that can be expressed clearly, simply and coherently.
 
-[^1]:  Not to be confused with the brand *identity*. That's why we need [[Brand Strategy Framework|a glossary!]]
+[^1]:  Not to be confused with the brand *identity*. That's why we need a glossary!
 
