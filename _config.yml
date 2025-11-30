@@ -10,7 +10,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-
+  - .sass-cache
 
 
 # You may need to change the base URL depending on your deploy configuration.
@@ -32,7 +32,14 @@ embed_tweets: false
 permalink:           pretty
 relative_permalinks: false
 
+safe: false
+
+plugins_dir: _plugins
+
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-last-modified-at
 
 last-modified-at:
