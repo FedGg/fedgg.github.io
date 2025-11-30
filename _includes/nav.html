@@ -1,8 +1,11 @@
 <nav class="site-nav">
-    <a class="nav-link nav-home" href="{{ site.baseurl }}/">
-        <b>{{ site.title }}</b>
+  <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <img src="https://ideas.gaggio.com/content/images/2024/09/--logo-1.png" alt="Site Logo">
     </a>
-    <div class="nav-links">
-        <a class="nav-link" href="https://ideas.gaggio.com/">Ideas Garden</a>
-    </div>
+    <a class="nav-link nav-home" href="{{ site.baseurl }}/">
+      <b>{{ site.title }}</b>
+    </a>
+    <a class="nav-link" href="https://ideas.gaggio.com/" target="_blank">Ideas Garden</a>
+  </div>
 </nav>

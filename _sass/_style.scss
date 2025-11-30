@@ -144,3 +144,25 @@ code {
   color: #ccc;
   cursor: help;
 }
+
+.site-nav {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-logo img {
+  height: 40px;  // adjust as needed
+  width: auto;
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
