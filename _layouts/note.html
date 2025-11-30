@@ -4,13 +4,13 @@ layout: default
 
 <article>
   <div>
-      <h1>{{ page.title }}</h1>
-      <time datetime="{% if page.modified %}{{ page.modified | date_to_xmlschema }}{% else %}{{ page.last_modified_at | date_to_xmlschema }}{% endif %}">
-        {% if page.type != 'pages' %}
-          Last updated on {% if page.modified %}{{ page.modified | date: "%B %-d, %Y" }}{% else %}{{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}
-        {% endif %}
-      </time>
-  </div>
+    <h1>{{ page.title }}</h1>
+    <time datetime="{% if page.updated %}{{ page.updated | date_to_xmlschema }}{% else %}{{ page.last_modified_at | date_to_xmlschema }}{% endif %}">
+      {% if page.type != 'pages' %}
+        Last updated on {% if page.updated %}{{ page.updated | date: "%B %-d, %Y" }}{% else %}{{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}
+      {% endif %}
+    </time>
+</div>
 
 
   <div id="notes-entry-container">
