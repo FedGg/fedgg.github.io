@@ -6,7 +6,6 @@ tags:
 category:
   - Garden Notes
   - Concepts
-date: 2025-11-30
 ---
 
 In simple terms I would define symbolic synthesis is the way we represent complex ideas or stories using brief and simple verbal and visual metaphors. 

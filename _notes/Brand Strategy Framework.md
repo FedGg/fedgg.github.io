@@ -5,7 +5,6 @@ tags:
   - framework
 category:
   - Frameworks
-date: 2025-05-04, 15:26
 ---
 
 ## Brand Strategy Framework — definitions
