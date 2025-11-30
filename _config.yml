@@ -1,6 +1,7 @@
 title:               Notes
 description:         Notes for thinking in public
-url:			'https://fedgg.github.io'
+url: "https://notes.gaggio.com"
+baseurl: ""
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
 
