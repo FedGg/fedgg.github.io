@@ -152,17 +152,39 @@ code {
 
 .nav-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: flex-end;
+}
+
 .nav-logo img {
-  height: 40px;  // adjust as needed
+  height: 40px;
   width: auto;
   display: block;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: inherit;
+/* Aggressively remove all link styling in nav */
+.site-nav a,
+.site-nav .nav-link,
+.site-nav .nav-logo,
+.site-nav .nav-home {
+  text-decoration: none !important;
+  background-image: none !important;
+  background: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove all pseudo-elements (arrows) from nav links */
+.site-nav a::after,
+.site-nav a::before,
+.site-nav .nav-link::after,
+.site-nav .nav-link::before,
+.site-nav .nav-logo::after,
+.site-nav .nav-logo::before {
+  content: none !important;
+  display: none !important;
 }
