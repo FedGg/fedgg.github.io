@@ -7,6 +7,7 @@ category:
   - Frameworks
 ---
 
+
 ## Brand Strategy Framework — definitions
 
 For convenience, to share a common vocabulary with collaborators and clients, I compiled a set of definitions of frequently used terms used in brand strategy. My aim is to eliminate redundancies, clarify relationships between components, and align more closely with academic language while maintaining a practical orientation needed for implementation.
