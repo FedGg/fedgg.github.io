@@ -4,3 +4,482 @@
 @import "../_sass/normalize";
 @import "../_sass/code";
 @import "../_sass/style";
+
+// ============================================================================
+// COMPREHENSIVE OVERRIDES - These must come AFTER imports to win
+// ============================================================================
+
+/* SUPER AGGRESSIVE BACKLINKS FONT FIX */
+/* Add this to the VERY TOP of your styles.scss, right after the imports */
+
+/* Target every possible variation of backlinks/mentions */
+.backlinks *,
+.backlinks ul,
+.backlinks ol,
+.backlinks li,
+.backlinks a,
+.backlinks-container *,
+.backlinks-container ul,
+.backlinks-container ol,
+.backlinks-container li,
+.backlinks-container a,
+aside.backlinks *,
+aside.backlinks ul,
+aside.backlinks li,
+aside.backlinks a,
+div.backlinks *,
+div.backlinks ul,
+div.backlinks li,
+div.backlinks a,
+section.backlinks *,
+section.backlinks ul,
+section.backlinks li,
+section.backlinks a {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Make sure headings in backlinks are bold */
+.backlinks h2,
+.backlinks h3,
+.backlinks h4,
+.backlinks-container h2,
+.backlinks-container h3,
+.backlinks-container h4 {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* MENTIONS BOX - Force sans-serif for note title links */
+.backlink-box a.internal-link {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Also target without the class specificity in case needed */
+.backlink-box .internal-link {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+
+// INLINE LINKS IN PARAGRAPHS - Keep serif font (inherit from body)
+p a.internal-link,
+main p a.internal-link,
+article p a.internal-link {
+  font-family: inherit !important; // This will use the Literata serif from body
+}
+
+// KILL PURPLE LINKS - Nuclear option for all link states
+a.internal-link,
+a.internal-link:link,
+a.internal-link:visited,
+a.internal-link:active,
+p a.internal-link,
+p a.internal-link:link,
+p a.internal-link:visited,
+p a.internal-link:active,
+main a.internal-link,
+main a.internal-link:link,
+main a.internal-link:visited,
+main a.internal-link:active {
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #cbd5e0 !important;
+  transition: all 0.2s !important;
+  background: transparent !important;
+}
+
+// Yellow hover for inline links
+p a.internal-link:hover,
+main a.internal-link:hover {
+  background-color: #fef3c7 !important;
+  border-bottom-color: #f59e0b !important;
+  color: inherit !important;
+}
+
+// FORCE SANS-SERIF FOR NOTE TITLES IN ALL CONTEXTS
+// Backlinks/mentions - sans-serif with every possible selector
+.backlinks h2,
+.backlinks h3,
+.backlinks ul li a,
+.backlinks ol li a,
+.backlinks li a,
+.backlinks-container ul li a,
+.backlinks-container ol li a,
+.backlinks-container li a,
+aside.backlinks ul li a,
+aside.backlinks li a,
+div.backlinks ul li a,
+div.backlinks li a,
+section.backlinks ul li a,
+section.backlinks li a {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+// Lists - sans-serif
+ul li > a.internal-link,
+ol li > a.internal-link,
+ul li > .internal-link,
+ol li > .internal-link {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  color: #4a5568 !important;
+  border-bottom: none !important;
+  background: transparent !important;
+}
+
+// List hover - no yellow, just color change
+ul li > a.internal-link:hover,
+ol li > a.internal-link:hover,
+ul li > .internal-link:hover,
+ol li > .internal-link:hover {
+  color: #2d3748 !important;
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+// ============================================================================
+// END OVERRIDES
+// ============================================================================
+
+// Navigation styling
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.nav-home {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #2d3748;
+    text-decoration: underline;
+  }
+}
+
+:root {
+  --color-primary: #ff6600;
+  --color-background: #ffffff;
+  --color-text: #2d3748;
+  --color-link: #4299e1;
+  --font-serif: Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Literata', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM+Sans', -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+// Tag cloud styling
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.tag-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #2d3748;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #3B757F;
+    color: white;
+    border-color: #3B757F;
+    transform: translateY(-2px);
+  }
+
+  .count {
+    font-size: 0.85rem;
+    color: #718096;
+  }
+
+  &:hover .count {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.tag-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+
+  h2 {
+    color: #2d3748;
+  }
+}
+
+// Home page layout styles
+.home-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-template-rows: auto auto;
+  gap: 0 3rem;
+  margin-top: 2rem;
+}
+
+.home-main {
+  min-width: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.graph-container {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 2rem;
+}
+
+.home-main h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  margin-top: 2rem;
+}
+
+// Sidebar styling
+.home-sidebar {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 2rem;
+  font-family: 'Inter', sans-serif;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  height: fit-content;
+}
+
+.home-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  font-family: 'Inter', sans-serif;
+}
+
+.recent-notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-notes-list li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.recent-notes-list li:last-child {
+  border-bottom: none;
+}
+
+.recent-notes-list a {
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: block;
+  padding: 0.75rem 0;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.recent-notes-list a:hover {
+  color: #2d3748;
+}
+
+// Mobile responsive
+@media (max-width: 968px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem 0;
+  }
+
+  .home-main {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-sidebar {
+    position: static;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .graph-container {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+// Regular pages wrapper
+.wrapper {
+  max-width: 46em;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Concepts page styling
+.concepts-page {
+  font-family: 'Inter', sans-serif;
+}
+
+.concepts-page h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.concepts-intro {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.concepts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 3;
+  column-gap: 3rem;
+
+  @media (max-width: 968px) {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    column-count: 1;
+  }
+}
+
+.concepts-list li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e2e8f0 !important;
+  break-inside: avoid;
+  background: none !important;
+}
+
+.concepts-list a {
+  display: block;
+  padding: 0.75rem 0;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.concepts-list a:hover {
+  color: #2d3748;
+  background: none !important;
+  background-color: transparent !important;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.concepts-list a:active,
+.concepts-list a:focus {
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.no-concepts {
+  color: #718096;
+  font-style: italic;
+  padding: 2rem;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+// Footer styling
+footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+footer a {
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #2d3748;
+  text-decoration: underline;
+}
+
+// Graph text labels
+.text text {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500;
+}
+
+// ============================================================================

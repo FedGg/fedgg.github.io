@@ -80,12 +80,24 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         e.url != current_note.url && e.content.include?(current_note.url)
       end
 
-      # Nodes: Graph
-      graph_nodes << {
+      # Nodes: Graph - now includes category and tags
+      node_data = {
         id: note_id_from_note(current_note),
         path: "#{site.baseurl}#{current_note.url}#{link_extension}",
         label: current_note.data['title'],
-      } unless current_note.path.include?('_notes/index.html')
+      }
+      
+      # Add category if present
+      if current_note.data['category']
+        node_data[:category] = current_note.data['category']
+      end
+      
+      # Add tags if present
+      if current_note.data['tags']
+        node_data[:tags] = current_note.data['tags']
+      end
+      
+      graph_nodes << node_data unless current_note.path.include?('_notes/index.html')
 
       # Edges: Jekyll
       current_note.data['backlinks'] = notes_linking_to_current_note

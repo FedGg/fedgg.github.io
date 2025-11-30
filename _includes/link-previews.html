@@ -67,7 +67,7 @@
     var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
     var top = window.pageYOffset || document.documentElement.scrollTop
 
-    if (event.target.host === window.location.host) {
+    if (event.target.host === window.location.host && event.target.classList.contains('internal-link')) {
       if (!linkHistories[event.target.href]) {
         iframe.src = event.target.href
         iframe.onload = function() {
@@ -82,7 +82,7 @@
           setTimeout(function() {
             tooltipWrapper.style.opacity = 1;
           }, 1)
-        } 
+        }
       } else {
         tooltipContent.innerHTML = linkHistories[event.target.href]
         tooltipWrapper.style.display = 'block';

@@ -1,33 +1,41 @@
 ---
-layout: page
+layout: home
 title: Home
 id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+<div class="home-container">
+<div class="home-main" markdown="1">
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+# Federico's Notes
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+This is a selection of my interconnected notes. It is an experiment and a work in progress, a space for developing ideas through writing and connecting concepts across different domains.
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+---
 
-<strong>Recently updated notes</strong>
+## Knowledge Graph
 
-<ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
-    <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-    </li>
-  {% endfor %}
+Explore the connections between notes below. Click any node to navigate, or drag nodes to rearrange the view.
+
+</div>
+
+<div class="graph-container" markdown="0">
+
+{% include notes_graph.html %}
+
+</div>
+
+<aside class="home-sidebar" markdown="0">
+
+<h3>Recently Updated</h3>
+
+<ul class="recent-notes-list">
+{% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+{% for note in recent_notes limit: 10 %}
+<li><a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
+{% endfor %}
 </ul>
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+</aside>
+</div>

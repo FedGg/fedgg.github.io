@@ -1,45 +1,109 @@
 <style>
   .links line {
-    stroke: #ccc;
-    opacity: 0.5;
+    stroke: #cbd5e0;
+    opacity: 0.6;
   }
 
   .nodes circle {
     cursor: pointer;
     fill: #8b88e6;
+    stroke: #fff;
+    stroke-width: 2px;
     transition: all 0.15s ease-out;
   }
 
-  .text text {
-    cursor: pointer;
-    fill: #333;
-    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+  .nodes circle.concept-node {
+    fill: #ff6b35 !important;
   }
+
+  .nodes circle.current-node {
+    fill: #2d3748 !important;
+    stroke: #ffd700 !important;
+    stroke-width: 3px !important;
+  }
+
+  .text text {
+  cursor: pointer;
+  fill: #2d3748;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+}
 
   .nodes [active],
   .text [active] {
     cursor: pointer;
-    fill: black;
+    fill: #2d3748;
+    font-weight: 600;
   }
 
   .inactive {
     opacity: 0.1;
-    transition: all 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+  }
+
+  .links line.active-link {
+    stroke: #ff6b35;
+    opacity: 1;
+    stroke-width: 3px;
   }
 
   #graph-wrapper {
-    background: #fcfcfc;
-    border-radius: 4px;
+    background: #f7fafc;
+    border-radius: 8px;
     height: auto;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
-  
+
   #graph-wrapper > svg {
     max-width: 100%;
     display: block;
   }
+
+  .graph-legend {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .legend-dot.regular { background: #8b88e6; }
+  .legend-dot.concept { background: #ff6b35; }
+  .legend-dot.current { background: #2d3748; border-color: #ffd700; }
 </style>
 
 <div id="graph-wrapper">
+  <div class="graph-legend">
+    <div class="legend-item">
+      <span class="legend-dot regular"></span>
+      <span>Notes</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot concept"></span>
+      <span>Concepts</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot current"></span>
+      <span>Current Page</span>
+    </div>
+  </div>
   <script>
     window.addEventListener("load", loadGraph);
 
@@ -56,7 +120,6 @@
         const ACTIVE_RADIUS_FACTOR = 1.5;
         const STROKE = 1;
         const FONT_SIZE = 16;
-        const TICKS = 200;
         const FONT_BASELINE = 40;
         const MAX_LABEL_LENGTH = 50;
 
@@ -97,13 +160,17 @@
             });
 
           node.attr("class", (node_d) => {
+            let classes = getNodeClasses(node_d);
             if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
-              return "inactive";
+              classes += " inactive";
             }
-            return "";
+            return classes;
           });
 
           link.attr("class", (link_d) => {
+            if (link_d.source.id === d.id || link_d.target.id === d.id) {
+              return "active-link";
+            }
             if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
               return "inactive";
             }
@@ -112,7 +179,7 @@
 
           link.attr("stroke-width", (link_d) => {
             if (link_d.source.id === d.id || link_d.target.id === d.id) {
-              return STROKE * 4;
+              return STROKE * 3;
             }
             return STROKE;
           });
@@ -125,50 +192,44 @@
         };
 
         const onMouseout = function (d) {
-          node.attr("class", "");
+          node.attr("class", (node_d) => getNodeClasses(node_d));
           link.attr("class", "");
           text.attr("class", "");
           link.attr("stroke-width", STROKE);
         };
 
-        const sameNodes = (previous, next) => {
-          if (next.length !== previous.length) {
-            return false;
+        const getNodeClasses = (d) => {
+          let classes = "";
+
+          // Check if node is a Concept
+          const isConceptByCategory = d.category === "Concepts" || d.category === "concepts";
+          const isConceptByTag = d.tags && (
+            (Array.isArray(d.tags) && d.tags.includes("concepts")) ||
+            (typeof d.tags === 'string' && d.tags.includes("concepts"))
+          );
+
+          if (isConceptByCategory || isConceptByTag) {
+            classes += "concept-node";
           }
 
-          const map = new Map();
-          for (const node of previous) {
-            map.set(node.id, node.label);
+          // Check if node is current page - exact match
+          if (isCurrentPath(d.path)) {
+            classes += " current-node";
           }
 
-          for (const node of next) {
-            const found = map.get(node.id);
-            if (!found || found !== node.title) {
-              return false;
-            }
-          }
-
-          return true;
+          return classes;
         };
 
-        const sameEdges = (previous, next) => {
-          if (next.length !== previous.length) {
-            return false;
-          }
+        function isCurrentPath(notePath) {
+          const currentPath = window.location.pathname.replace(/\/$/, '');
+          const normalizedNotePath = notePath.replace(/\/$/, '');
+          return currentPath === normalizedNotePath;
+        }
 
-          const set = new Set();
-          for (const edge of previous) {
-            set.add(`${edge.source.id}-${edge.target.id}`);
-          }
-
-          for (const edge of next) {
-            if (!set.has(`${edge.source.id}-${edge.target.id}`)) {
-              return false;
-            }
-          }
-
-          return true;
-        };
+        function shorten(str, maxLen, separator = ' ') {
+          if (str.length <= maxLen) return str;
+          return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+        }
 
         const graphWrapper = document.getElementById('graph-wrapper')
         const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -188,26 +249,41 @@
         const height = Number(svg.attr("height"));
         let zoomLevel = 1;
 
+        const g = svg.append("g");
+        let link = g.append("g").attr("class", "links").selectAll(".link");
+        let node = g.append("g").attr("class", "nodes").selectAll(".node");
+        let text = g.append("g").attr("class", "text").selectAll(".text");
+
+        // Define ticked function BEFORE using it in simulation
+        function ticked() {
+          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+          text
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+        }
+
+        // Now create simulation with ticked
         const simulation = d3
           .forceSimulation(nodesData)
           .force("forceX", d3.forceX().x(width / 2))
           .force("forceY", d3.forceY().y(height / 2))
-          .force("charge", d3.forceManyBody())
+          .force("charge", d3.forceManyBody().strength(-400))
           .force(
             "link",
             d3
               .forceLink(linksData)
               .id((d) => d.id)
-              .distance(70)
+              .distance(100)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(80))
-          .stop();
-
-        const g = svg.append("g");
-        let link = g.append("g").attr("class", "links").selectAll(".link");
-        let node = g.append("g").attr("class", "nodes").selectAll(".node");
-        let text = g.append("g").attr("class", "text").selectAll(".text");
+          .force("collision", d3.forceCollide().radius(50))
+          .alphaDecay(0.01)
+          .on("tick", ticked);
 
         const resize = () => {
           if (d3.event) {
@@ -232,17 +308,22 @@
             .attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
         };
 
-        const ticked = () => {
-          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
-          text
-            .attr("x", (d) => d.x)
-            .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
-          link
-            .attr("x1", (d) => d.source.x)
-            .attr("y1", (d) => d.source.y)
-            .attr("x2", (d) => d.target.x)
-            .attr("y2", (d) => d.target.y);
-        };
+        function dragstarted(d) {
+          if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+
+        function dragged(d) {
+          d.fx = d3.event.x;
+          d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+          if (!d3.event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }
 
         const restart = () => {
           updateNodeSize();
@@ -251,12 +332,17 @@
           node = node
             .enter()
             .append("circle")
+            .attr("class", (d) => getNodeClasses(d))
             .attr("r", (d) => {
               return nodeSize[d.id];
             })
             .on("click", onClick)
             .on("mouseover", onMouseover)
             .on("mouseout", onMouseout)
+            .call(d3.drag()
+              .on("start", dragstarted)
+              .on("drag", dragged)
+              .on("end", dragended))
             .merge(node);
 
           link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
@@ -283,28 +369,12 @@
           simulation.nodes(nodesData);
           simulation.force("link").links(linksData);
           simulation.alpha(1).restart();
-          simulation.stop();
-
-          for (let i = 0; i < TICKS; i++) {
-            simulation.tick();
-          }
-
-          ticked();
         };
 
         const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
 
         zoomHandler(svg);
         restart();
-
-        function isCurrentPath(notePath) {
-          return window.location.pathname.includes(notePath)
-        }
-
-        function shorten(str, maxLen, separator = ' ') {
-          if (str.length <= maxLen) return str;
-          return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
-        }
       }
     }
   </script>
