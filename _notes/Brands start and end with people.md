@@ -11,4 +11,4 @@ In western culture we respect and revere brands as a kind of modern deities, but
 
 In this sense, brands start and end with people.
 
-[^1]: Some may argue that so are deities, but that's way beyond the subject matter here.
+[^1]: Some may argue that the same applies to deities, but that's way beyond the subject matter here.
