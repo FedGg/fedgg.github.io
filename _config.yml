@@ -27,6 +27,10 @@ relative_permalinks: false
 plugins:
   - jekyll-last-modified-at
 
+last-modified-at:
+  date-format: '%Y-%m-%d'
+
+
 sass:
   sass_dir:          _sass
   style:            :compressed
