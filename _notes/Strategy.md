@@ -2,11 +2,10 @@
 title: Strategy
 tags:
   - concepts
-category:
-  - Concepts
+category: Concepts
 date: 2025-10-13
+updated: 2025-12-06
 ---
-
 
 Strategy is one of those words which are often used and abused. It is easy to take its meaning for granted. Even among strategists, business leaders and academics there is no consensus as to what strategy is. 
 

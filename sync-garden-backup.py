@@ -75,29 +75,20 @@ def create_jekyll_frontmatter(original_frontmatter, filename):
             if tag_clean != PUBLISH_TAG:
                 jekyll_fm['tags'] = [tag_clean]
 
-    # Preserve category - Jekyll expects a SINGLE string, not a list
+    # Preserve category and strip wikilinks
     if original_frontmatter and 'category' in original_frontmatter:
         category = original_frontmatter['category']
         if isinstance(category, list):
-            # Take only the first category and clean wikilinks
-            jekyll_fm['category'] = clean_wikilinks(category[0])
+            # Handle list of categories, clean wikilinks from each
+            jekyll_fm['category'] = [clean_wikilinks(c) for c in category]
         else:
             # Single category, clean wikilinks
             jekyll_fm['category'] = clean_wikilinks(category)
 
-    # Preserve date if present and valid
+    # Preserve date if present
     if original_frontmatter:
         if 'date' in original_frontmatter or 'Date' in original_frontmatter:
-            date_value = original_frontmatter.get('date') or original_frontmatter.get('Date')
-            if date_value and date_value != 'None':
-                jekyll_fm['date'] = date_value
-
-    # Preserve updated if present and valid
-    if original_frontmatter:
-        if 'updated' in original_frontmatter or 'Updated' in original_frontmatter:
-            updated_value = original_frontmatter.get('updated') or original_frontmatter.get('Updated')
-            if updated_value and updated_value != 'None':
-                jekyll_fm['updated'] = updated_value
+            jekyll_fm['date'] = original_frontmatter.get('date') or original_frontmatter.get('Date')
 
     # Convert to YAML string
     fm_text = "---\n"
@@ -107,14 +98,10 @@ def create_jekyll_frontmatter(original_frontmatter, filename):
             for item in value:
                 fm_text += f"  - {item}\n"
         else:
-            # Convert datetime objects to string format
-            if hasattr(value, 'strftime'):  # If it's a datetime object
-                value = value.strftime('%Y-%m-%d')
             fm_text += f"{key}: {value}\n"
     fm_text += "---\n\n"
 
     return fm_text
-
 
 def convert_wikilinks(content):
     """Convert [[wikilinks]] to [wikilinks](wikilinks.md)"""
@@ -214,7 +201,7 @@ def sync_notes():
             if not has_publish_tag(frontmatter_dict, body):
                 continue
 
-            print(f"📄 Processing: {filename}")
+            print(f"📝 Processing: {filename}")
 
             # Create Jekyll frontmatter
             jekyll_frontmatter = create_jekyll_frontmatter(frontmatter_dict, filename)
@@ -241,3 +228,4 @@ def sync_notes():
 
 if __name__ == "__main__":
     sync_notes()
+    

@@ -2,10 +2,9 @@
 title: Culture is "the way we do things around here"
 tags:
   - culture
-  - stories
-category:
-  - AllNotes/Topics/Stories|Stories
+category: AllNotes/Topics/Stories|Stories
 date: 2025-10-19
+updated: 2025-12-06
 ---
 
 Culture is often defined as "the way we do things around here." It emerges, whether deliberately shaped or not, when people interact in groups. It happens at different scales: national, local, a company, a family. 

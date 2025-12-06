@@ -4,7 +4,7 @@ url: "https://notes.gaggio.com"
 baseurl: ""
 include:             ['_pages']
 exclude:
-  - ['_includes/notes_graph.json']
+  - _includes/notes_graph.json
   - vendor/bundle
   - vendor/cache
   - Gemfile

@@ -3,8 +3,8 @@ title: Brand Strategy Framework
 tags:
   - drafts
   - framework
-category:
-  - Frameworks
+category: Frameworks
+updated: 2025-11-30
 ---
 
 

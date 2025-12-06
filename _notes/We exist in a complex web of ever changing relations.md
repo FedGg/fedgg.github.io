@@ -2,12 +2,12 @@
 title: We Exist In A Complex Web Of Ever Changing Relations
 tags:
   - Propositions
-category:
-  - Propositions
+category: Propositions
 date: 2025-10-15
+updated: 2025-12-06
 ---
 
-From Helgoland & Umbuntu
-To complexity science
+Whitehead, Rovelli (Helgoland), Umbuntu
+Complexity science
 
-This is a placeholder, I will publish a note when ready
+This is a placeholder, work in progress, I will publish a note soon

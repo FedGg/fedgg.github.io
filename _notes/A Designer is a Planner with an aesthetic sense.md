@@ -2,11 +2,10 @@
 title: A Designer is a Planner with an aesthetic sense
 tags:
   - proposition
-category:
-  - Propositions
+category: Propositions
 date: 2025-10-26
+updated: 2025-12-06
 ---
-
 
 In his seminal book *Design as Art*, Bruno Munari famously defined a designer as *a planner with an aesthetic sense*.[^1]
 

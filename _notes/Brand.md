@@ -3,9 +3,9 @@ title: Brand
 tags:
   - brand
   - concepts
-category:
-  - Concepts
+category: Concepts
 date: 2024-09-02
+updated: 2025-12-06
 ---
 
 *Brand* is one of those pervasive words in our culture. Its ubiquity and varied context of use compels me to define it in my own terms.

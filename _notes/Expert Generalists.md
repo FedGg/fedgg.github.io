@@ -2,9 +2,9 @@
 title: Expert Generalists
 tags:
   - propositions
-category:
-  - Propositions
+category: Propositions
 date: 2024-08-23
+updated: 2025-11-09
 ---
 
 Those of us following unorthodox, non-linear professional development pathways, might have developed into what philosopher Jonathan Rawson calls *expert generalists*. This concept describes someone who develops deep knowledge in one specific area and then uses that expertise as a foundation to make connections across other domains. This approach allows for a more holistic understanding of complex issues and an improved ability to navigate uncertainty.
