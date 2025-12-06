@@ -7,7 +7,7 @@ date: 2024-08-24
 updated: 2025-12-06
 ---
 
-When you meet someone new, the standard question is: «What do you do?». I find it hard to give a coherent answer. Mainly because what I do, depends. The way I think about it also changes. My answer may be either bland and generic («[[designer]]», «[[strategist]]», «consultant») or too long.
+When you meet someone new, the standard question is: «What do you do?». I find it hard to give a coherent answer. Mainly because what I do, depends. The way I think about it also changes. My answer may be either bland and generic («[[A Designer is a Planner with an aesthetic sense|designer]]», «[[strategist]]», «consultant») or too long.
 
 As a result of my work history I developed some expertise in building brands. At times I said: I am a [[brand]] builder. I work with people to develop brands holistically. 
 
