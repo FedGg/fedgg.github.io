@@ -16,7 +16,7 @@ I am Milano, Paris, London, Copenhagen, Barcelona. Giarolo, Zanego and the Medit
 
 Our identity continuously evolves from all the interactions we have with others. Chinese culture uses [[The Five Relations]] as a framework underpinning its social structures for over two millennia. In Africa the term *Ubuntu*, which means means *humanity*, is sometimes translated as *"I am because we are"*. It describes *a set of (...) value systems that emphasise the interconnectedness of individuals with their surrounding societal and physical worlds*.[^2]
 
-Carlo Rovelli's Helgoland tells the fascinating story of the birth of Quantum theory. It is not a book about physics, but philosophy. He writes:
+Carlo Rovelli's Helgoland[^4] tells the *strange and beautiful story* of the birth of Quantum Physics. It is not a book about physics, but philosophy. He writes:
 
 >  The properties of an object are the way in which it acts upon other objects; reality is this web of interactions. Instead of seeing the physical world as a collection of objects with definite properties, quantum theory invites us to see the physical world as a net of relations. Objects are its *nodes*
 
@@ -28,4 +28,5 @@ The notion of an individual, isolated and self-determined identity which underpi
 
 [^1]: https://archive.ph/W5neP
 [^2]: https://en.wikipedia.org/wiki/Ubuntu_philosophy
-[^3]: https://en.wikipedia.org/wiki/Process_philosophy
+[^3]: Carlo Rovelli, (2022). [Helgoland: The Strange and Beautiful Story of Quantum Physics. UK. Penguin Books](https://uk.bookshop.org/p/books/helgoland-carlo-rovelli/7005151?ean=9780141993270&next=t).
+[^4]: https://en.wikipedia.org/wiki/Process_philosophy
