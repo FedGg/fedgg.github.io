@@ -4,7 +4,7 @@ tags:
   - drafts
   - framework
 category: Frameworks
-updated: 2025-11-30
+updated: 2025-12-18
 ---
 
 
@@ -16,7 +16,7 @@ For convenience, to share a common vocabulary with collaborators and clients, I 
 
 Applicable to company / organisation brands.
 
-**Purpose**: The fundamental reason the organisation exists beyond profit; its contribution to society and people's lives. 'People' include (but are not limited to) customers and employees.
+**Purpose**: The fundamental reason the organisation exists beyond profit; its contribution to society and people's lives. 'People' include (but is not limited to) customers and employees.
 
 **Vision**: The aspirational future state the brand seeks to create or achieve. 
 

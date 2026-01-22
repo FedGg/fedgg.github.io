@@ -4,10 +4,10 @@ tags:
   - concepts
 category: Concepts
 date: 2025-12-10
-updated: 2025-12-14
+updated: 2025-12-18
 ---
 
-A Polycrisis is a crisis that consists of multiple, causally entangled, mutually reinforcing (economic, political, social, ecological) crises.
+A Polycrisis is a set of multiple, causally entangled, mutually reinforcing crises (e.g. economic, political, social, ecological).
 
 > What may appear to be separate crises in different global systems in fact interact, exacerbate, and reshape one another to form a conjoined “polycrisis” that must be understood and addressed as a whole[^1]
 
