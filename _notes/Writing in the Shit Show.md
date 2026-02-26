@@ -6,11 +6,12 @@ category: AllNotes/Topics/Stories|Stories
 updated: 2026-02-26
 ---
 
-Hello dear reader. I haven't been posting for a while. Why am I writing here? [[I write to help me think]]. I haven't stopped thinking, or writing. Why are you reading this particular newsletter or post? I hope you will let me know.
+Why am I writing here? [[I write to help me think]]. I haven't stopped thinking, or writing. Why are you reading this? I hope you will let me know.
 
-So much to do, so much is happening. Time is s
+[[David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg|Open: David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg]]
+![David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg](/assets/images/David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg)
 
-hort, attention is scarce. The moment is dire, action is urgent. How does any of this make sense? Maybe that's not the most pertinent question right now. Maybe I need to *stop making sense*, *[I ain't go time for that now](https://tidal.com/track/73349212/u),* and get on with making better decisions today.
+So much to do, so much is happening. Time is short, attention is scarce. The moment is dire, action is urgent. How does any of this make sense? Maybe that's not the most pertinent question right now. Maybe I need to *stop making sense*, *[I ain't go time for that now](https://tidal.com/track/73349212/u),* and get on with making better decisions today.
 
 My friends and co-conspirators at Absurd Intelligence coined a cogent term for what is others more politely call the [[Polycrisis]]: the "multifaceted intersecting shitshow".[^1] It all points to the systemic, interconnected nature of our predicaments.
 
@@ -22,7 +23,8 @@ By reading this you become part of my web and I become part of yours. Together w
 
 In my day job, I help people in organisations define the values and assumptions which bring them together. How they exist and act as a group, how they relate to others, and to each-other, to people within or outside the organisation. In a company, for example: customers, employees, partners and so on. This goes under the umbrella of Brand Strategy. The perception, and the value, of a (company) Brand depends on the application of those fundamental aspects (values, assumptions) to behaviours and actions which *build* the brand in people's day-to-day experience.
 
-A [[brand strategy]] is a story connecting people. It connects the people within the group to each other, and it connects the group to other people outside the group, who may be affected by the actions of the group. This may apply to a company, or a non-profit organisation, but also to a family, clan, community or nation. 
+A [[brand strategy]] is a story connecting people. It connects the people within the group to each other, and it connects the group to other people outside the group, who may be affected by the actions of the group. This may apply to a company, or a non-profit organisation, but also to a family, clan, community or country.
+
 To share a common understanding of this kind of story, helps us make decisions. It gives people a way to choose together, among multiple possibilities, the course of action which appears more likely to support the values and assumptions at the heart of their story. 
 
 In this blog (and my public notes) I write about everything that comes through my mind, from experience, reading, living, working and relating to others. I can't stop trying to make sense, but I strive to connect more dots, to help un-delude myself, and join forces with others who care and have the courage to imagine better ways of being together in the world.
