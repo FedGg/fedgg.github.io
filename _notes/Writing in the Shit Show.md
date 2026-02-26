@@ -27,10 +27,10 @@ A [[brand strategy]] is a story connecting people. It connects the people within
 
 To share a common understanding of this kind of story, helps us make decisions. It gives people a way to choose together, among multiple possibilities, the course of action which appears more likely to support the values and assumptions at the heart of their story. 
 
-In this blog (and my public notes) I write about everything that comes through my mind, from experience, reading, living, working and relating to others. I can't stop trying to make sense, but I strive to connect more dots, to help un-delude myself, and join forces with others who care and have the courage to imagine better ways of being together in the world.
+In this blog (and my public notes) I write about ideas that come through my mind, from experience, reading, living, working and relating to others. I can't stop trying to make sense, but I strive to connect more dots, to help un-delude myself, and join forces with others who care and have the courage to imagine better ways of being together in the world.
 
-[^1]: Waterhouse, C. (2025). How time travel is the key to coping with The Shitshow. https://www.absurdintelligence.com/how-time-travel-is-the-key-to-coping-with-the-shitshow/
+[^1]: Waterhouse, C. (2025). [How time travel is the key to coping with The Shitshow](https://www.absurdintelligence.com/how-time-travel-is-the-key-to-coping-with-the-shitshow/). 
 
-[^2]: Rowson, J., Pascal, L. (2021). Dispatches from a Time Between Worlds: Crisis and Emergence in Metamodernity. United Kingdom: Perspectiva Press. https://systems-souls-society.com/insight/perspectiva-press/dispatches-from-a-time-between-worlds/
+[^2]: Rowson, J., Pascal, L. (2021). [Dispatches from a Time Between Worlds: Crisis and Emergence in Metamodernity](https://systems-souls-society.com/insight/perspectiva-press/dispatches-from-a-time-between-worlds/). United Kingdom: Perspectiva Press.
 
-[^3]: Graeber, D. (2024). The Ultimate Hidden Truth of the World. United Kingdom: Penguin Books Limited. https://davidgraeber.org/books/the-ultimate-hidden-truth-of-the-world/
+[^3]: Graeber, D. (2024). [The Ultimate Hidden Truth of the World](https://davidgraeber.org/books/the-ultimate-hidden-truth-of-the-world/). United Kingdom: Penguin Books Limited. 
