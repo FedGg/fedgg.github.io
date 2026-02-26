@@ -6,10 +6,10 @@ category: AllNotes/Topics/Stories|Stories
 updated: 2026-02-26
 ---
 
-Why am I writing here? [[I write to help me think]]. I haven't stopped thinking, or writing. Why are you reading this? I hope you will let me know.
-
-[[David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg|Open: David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg]]
 ![David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg](/assets/images/David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg)
+*David Graeber speaks at Maagdenhuis occupation, University of Amsterdam, 2015. Guido van Nispen | CC BY 2.0*
+
+Why am I writing here? [[I write to help me think]]. I haven't stopped thinking, or writing. Why are you reading this? I hope you will let me know.
 
 So much to do, so much is happening. Time is short, attention is scarce. The moment is dire, action is urgent. How does any of this make sense? Maybe that's not the most pertinent question right now. Maybe I need to *stop making sense*, *[I ain't go time for that now](https://tidal.com/track/73349212/u),* and get on with making better decisions today.
 
