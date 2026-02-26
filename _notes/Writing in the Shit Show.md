@@ -17,7 +17,7 @@ I am fascinated by this evocative expression that we are in *a Time Between Worl
 I write to un-delude myself. To wake up from this state of torpor, where one gets on with whatever is at hand while the world burns. What can I do? I am just a person. That's the biggest delusion of all, to think of ourselves as isolated beings. I think therefore I am. No, actually. *I am because we are*. [[We exist in a complex web of ever changing relations]]. 
 
 ![David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg](/assets/images/David Graeber Maagdenhuis Amsterdam Mar 7 2015.jpg)
-*David Graeber speaks at Maagdenhuis occupation, University of Amsterdam, 2015. Guido van Nispen | CC BY 2.0
+*David Graeber speaks at Maagdenhuis occupation, University of Amsterdam, 2015. Guido van Nispen | CC BY 2.0*
 
 By reading this you become part of my web and I become part of yours. Together we change. The *world* is something we make as we relate to other beings, places and things. As the great, late David Graeber wrote: *“The ultimate hidden truth of the world is that it is something that we make, and could just as easily make differently.”*[^3] We see the world through the lens of the values and assumptions which became dominant in our society, among the people we relate to. When we change those values and assumptions, the world changes.
 
