@@ -4,16 +4,16 @@ tags:
   - propositions
 category: Propositions
 date: 2025-10-15
-updated: 2026-01-17
+updated: 2026-02-26
 ---
 
 In an interview to El País in 1981, Jorge Luis Borges said:
 
 > “I am not sure that I exist, actually. I am all the writers that I have read, all the people that I have met, all the women that I have loved; all the cities I have visited, all my ancestors.”[^1]
 
-I am Borges, John Berger, Italo Calvino, David Graeber, Ursula Le Guin, Buckminster Fuller. I am Bruno Munari, Tibor Kalman, Vaughan Oliver. I am Brian Eno, PJ Harvey, John Coltrane, Miles Davis, Marvin Gaye... I am every writer, every artist, friend, lover... every person that touched me and inspired me. I am Milano, Paris, London, Copenhagen, Barcelona. Giarolo, Zanego and the Mediterranean sea. 
+I am Jorge Luis Borges, John Berger, Italo Calvino, David Graeber, Ursula Le Guin, Buckminster Fuller. I am Bruno Munari, Tibor Kalman, Vaughan Oliver. Brian Eno, PJ Harvey, John Coltrane, Miles Davis, Marvin Gaye... I am every writer, every artist, friend, lover... every person that touched me and inspired me. I am Milano, Paris, London, Copenhagen, Barcelona. Giarolo, Zanego and the Mediterranean sea. 
 
-Our identity continuously evolves from all the interactions we have with others. Chinese culture uses [[The Five Relations]] as a framework underpinning their social structures for over two millennia. In Africa the term *Ubuntu* means *humanity*, and is sometimes translated as *"I am because we are"*. It describes *value systems that emphasise the interconnectedness of individuals with their surrounding societal and physical worlds*.[^2]
+Our identity continuously evolves from all the interactions we have with others. In Chinese culture [[The Five Relations]] framework has been supporting social structures for over two millennia. In Africa the term *Ubuntu* means *humanity*, and is sometimes translated as *"I am because we are"*. It describes *value systems that emphasise the interconnectedness of individuals with their surrounding societal and physical worlds*.[^2]
 
 Carlo Rovelli's Helgoland[^3] tells the *strange and beautiful story* of the birth of Quantum Physics. It is not a book about physics, but philosophy. He writes:
 

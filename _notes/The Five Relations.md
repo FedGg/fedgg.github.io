@@ -4,7 +4,7 @@ tags:
   - concepts
 category: Concepts
 date: 2025-12-10
-updated: 2025-12-16
+updated: 2026-02-16
 ---
 
 The Five Cardinal Relations, or *Wu Lun* (五倫)[^1], are a philosophical framework underpinning Chinese culture and social structure for over two millennia. The concept is attributed to *Mencius* (*Mengzi*)[^2], a philosopher, teacher, social and political theorist considered the spiritual successor of Confucius (Kongzi). For Mencius a human is not a static being, but a dynamic *becoming*, striving toward *sagehood*. An infant is not born as an ‘‘individual,’’ but rather, born into a framework of familial and socio-cultural relations that would shape and nurture that infant’s *benxing* (original human nature). 

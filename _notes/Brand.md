@@ -5,7 +5,7 @@ tags:
   - concepts
 category: Concepts
 date: 2024-09-02
-updated: 2025-12-06
+updated: 2026-02-16
 ---
 
 *Brand* is one of those pervasive words in our culture. Its ubiquity and varied context of use compels me to define it in my own terms.

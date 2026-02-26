@@ -4,7 +4,7 @@ tags:
   - propositions
 category: Propositions
 date: 2025-11-08
-updated: 2025-12-06
+updated: 2026-02-16
 ---
 
 In western culture we respect and revere brands as a kind of modern deities, but brands are just stories[^1], and stories are about people and are told by people. They start with the people that conceive of a new story, like a new product, innovation, or organisation. As those people build their story, they imbue the brand with their own values and aspirations. Most importantly, they create stories about the people they serve: their customers and audiences and various stakeholders. Brands start and end with people.

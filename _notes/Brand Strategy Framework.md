@@ -4,7 +4,7 @@ tags:
   - drafts
   - framework
 category: Frameworks
-updated: 2025-12-18
+updated: 2026-02-26
 ---
 
 
@@ -42,7 +42,7 @@ Also applicable to product and service brands
 
 **Target Audience**: The specific customer or audience segments the brand primarily aims to serve.
 
-**Customer Insights**: Deep understanding of customer needs, motivations, behaviours, and decision journeys relative to the category. 
+**Audience Insights**: Deep understanding of the target audience needs, motivations, behaviours, and decision journeys relative to the category. 
 
 **Strategic Capabilities**: The distinctive organisational resources, competencies, and assets that give the brand its "right to win" in the marketplace and enable it to deliver on its value proposition.
 
@@ -51,26 +51,26 @@ Also applicable to product and service brands
 ---
 ### Brand Positioning Elements
 
-**The Enemy or Problem**: The problem we aim to solve for customers. The cultural or market tension that inspires our actions.
+**The Enemy or Problem**: The problem the brand aims to solve for customers. The cultural or market tension that inspires its actions.
 
 **Brand Positioning**: The distinctive place the brand occupies in customers' minds relative to alternatives.
 
-**Value Proposition**: The collection of functional benefits (what the brand does), emotional benefits (how it makes customers feel), and self-expressive benefits (what it says about them) that together create value for customers.
+**Value Proposition**: The collection of functional benefits (what the brand does), emotional benefits (how it makes people feel), and self-expressive benefits (what it says about them) that together create value for customers/audiences.
 
-**Differentiation**: The specific benefits, attributes, or associations that meaningfully distinguish the brand from competitors in customers' minds.
+**Differentiation**: The specific benefits, attributes, or associations that meaningfully distinguish the brand from competitors in people's minds.
 
 **Reasons to Believe**: The tangible evidence and proof points that support the brand's claims.
 
 ---
 ### Brand Expression Elements
 
-**Brand Personality**: The human characteristics and traits associated with the brand. How we want people to perceive us.
+**Brand Personality**: The human characteristics and traits associated with the brand. How people in the organisation would like other people to perceive the brand.
 
-**Tone of Voice**: The distinctive verbal expression of the brand, including language, tone of voice, and communication style.
+**Tone of Voice**: The distinctive verbal expression of the brand, including language, tone of voice and communication style.
 
 **Brand Essence**: The distillation of the brand's core identity into a few defining words or a short phrase.
 
-**Brand Experience Principles**: Guidelines for how the brand comes to life across touchpoints. (related to Values)
+**Brand Experience Principles**: Guidelines for how the brand comes to life and 'behaves' across touchpoints. 
 
 **Visual Identity**: The comprehensive system of visual elements—including logo, typography, colour palette, imagery style, and design principles—that consistently expresses the brand's personality and positioning across all touch-points.
 

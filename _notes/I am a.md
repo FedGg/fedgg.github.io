@@ -4,7 +4,7 @@ tags:
   - identity
 category: Propositions
 date: 2024-08-24
-updated: 2025-12-06
+updated: 2026-02-16
 ---
 
 When you meet someone new, the standard question is: «What do you do?». I find it hard to give a coherent answer. Mainly because what I do, depends. The way I think about it also changes. My answer may be either bland and generic («[[A Designer is a Planner with an aesthetic sense|designer]]», «[[strategist]]», «consultant») or too long.

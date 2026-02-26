@@ -4,7 +4,7 @@ tags:
   - propositions
 category: Propositions
 date: 2026-01-03
-updated: 2026-01-03
+updated: 2026-02-18
 ---
 
 In my job, I strive for clarity and simplicity This is what [[brand strategy]] needs to do. Bring clarity, focus, alignment. It's not magic or flamboyant rhetoric. It's finding the truth from people and mirroring it back to them without all the noise. It's cleaning the mirror of mirages. Removing any distorting lens.

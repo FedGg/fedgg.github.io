@@ -4,7 +4,7 @@ tags:
   - concepts
 category: Atomic notes
 date: 2025-12-06
-updated: 2025-12-16
+updated: 2026-02-16
 ---
 
 From a very young age I have identified with the value of agility, both physical and mental. I wanted to be Tarzan, Zagor - men of the forest. The Puma (not the Eel). Not very strong (I wasn't) but rather svelte and efficient as a practitioner of Judo (I was) or Jujitsu. 

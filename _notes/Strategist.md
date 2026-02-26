@@ -5,7 +5,7 @@ tags:
   - Propositions
 category: Garden Notes
 date: 2025-08-12
-updated: 2026-01-22
+updated: 2026-02-16
 ---
 
 I work as a strategist. What I do involves creating [[Brand Strategy Framework|brand frameworks]], essentially a culture model for an organisation. A system of symbols.

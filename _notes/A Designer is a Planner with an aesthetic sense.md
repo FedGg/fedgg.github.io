@@ -4,7 +4,7 @@ tags:
   - proposition
 category: Propositions
 date: 2025-10-26
-updated: 2026-01-22
+updated: 2026-02-16
 ---
 
 In his seminal book *Design as Art*, Bruno Munari famously defined a designer as *a planner with an aesthetic sense*.[^1]

@@ -5,7 +5,7 @@ tags:
   - design
 category: Propositions
 date: 2025-11-09
-updated: 2025-12-06
+updated: 2026-02-16
 ---
 
 As a student, one of the books that inspired my career choices was *Grafica: La Cultura del Progetto* (Graphics: Design Culture, 1989). In the book, Roberto Pieraccini, who was head of visual design at Olivetti, reflects on the role of a communication designer:
