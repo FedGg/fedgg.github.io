@@ -5,7 +5,7 @@ tags:
   - concepts
 category: Concepts
 date: 2024-09-02
-updated: 2026-02-16
+updated: 2026-03-20
 ---
 
 *Brand* is one of those pervasive words in our culture. Its ubiquity and varied context of use compels me to define it in my own terms.
@@ -22,7 +22,7 @@ In my practice as a brand strategist and designer I see that *Brand* has multipl
 
 The word "brand" comes from the Old Norse "brandr" meaning "to burn" — originally referring to marking ownership by burning a mark into livestock or goods. Brands mark identity and signal ownership, but ultimately its meaning is created more by those who perceive the mark, than by those who burn it.
 
-As I wrote elsewhere, [the brand has two faces](https://ideas.gaggio.com/the-brand-with-two-faces/). Internally, the brand is a framework to make decisions. The definition of this framework is the task of [[brand strategy]]. Externally, the brand is a set of expectations in people’s mind. This is often referred to as the brand *image*[^1]
+As I wrote elsewhere, [the brand has two faces](https://ideas.gaggio.com/the-brand-with-two-faces/). Internally, the brand is a framework to make decisions. The definition of this framework is the task of [[AllNotes/Brand Strategy]]. Externally, the brand is a set of expectations in people’s mind. This is often referred to as the brand *image*[^1]
 
 As a means to ensure cohesion, the elements of a brand strategy can be expressed in narrative form.
 

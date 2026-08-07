@@ -4,7 +4,7 @@ tags:
   - evergreen
   - concepts
 category: Garden Notes
-updated: 2026-02-16
+updated: 2026-03-20
 ---
 
 I would define symbolic synthesis as the way we represent complex ideas or stories using brief and simple verbal and visual metaphors. 
